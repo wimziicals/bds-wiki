@@ -1,11 +1,14 @@
 import { defineConfig } from 'vitepress'
 const s = (text, dir, items) => ({ text, collapsed: false, items: items.map(([t, l]) => ({ text: t, link: `/${dir}/${l}` })) })
 export default defineConfig({
+  base: '/bds-wiki/',
   title: 'BDS Wiki',
   description: 'The community reference for Minecraft: Bedrock Dedicated Server',
   lastUpdated: true,
   themeConfig: {
     search: { provider: 'local' },
+    socialLinks: [{ icon: 'github', link: 'https://github.com/wimziicals/bds-wiki' }],
+    editLink: { pattern: 'https://github.com/wimziicals/bds-wiki/edit/main/docs/:path', text: 'Suggest a change to this page' },
     outline: [2, 3],
     nav: [
       { text: 'Start here', link: '/guide/quick-start' },
