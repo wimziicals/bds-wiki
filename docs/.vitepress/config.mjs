@@ -5,7 +5,22 @@ export default defineConfig({
   title: 'BDS Wiki',
   description: 'The community reference for Minecraft: Bedrock Dedicated Server',
   lastUpdated: true,
-  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/bds-wiki/logo.svg' }]],
+  head: [
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/bds-wiki/logo.svg' }],
+    ['link', { rel: 'apple-touch-icon', href: '/bds-wiki/logo-512.png' }],
+    // Link previews (Discord, Slack, social sites). Discord cannot show SVG, so these are PNG.
+    ['meta', { name: 'theme-color', content: '#6fcfa9' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'BDS Wiki' }],
+    ['meta', { property: 'og:title', content: 'BDS Wiki' }],
+    ['meta', { property: 'og:description', content: 'The community guide to Minecraft Bedrock Dedicated Server: every setting, Server Identity, NetherNet, scripting, a server.properties generator and an error lookup.' }],
+    ['meta', { property: 'og:url', content: 'https://wimziicals.github.io/bds-wiki/' }],
+    ['meta', { property: 'og:image', content: 'https://wimziicals.github.io/bds-wiki/og-image.png' }],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { property: 'og:image:alt', content: 'BDS Wiki logo and title' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }]
+  ],
   themeConfig: {
     logo: '/logo.svg',
     search: { provider: 'local' },
