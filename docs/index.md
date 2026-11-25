@@ -3,6 +3,9 @@ layout: home
 hero:
   name: BDS Wiki
   text: Bedrock Dedicated Server, documented
+  image:
+    src: /logo.svg
+    alt: BDS Wiki logo
   tagline: Setup, NetherNet, Server Identity, scripting, backups, and the settings the official docs have not caught up with.
   actions:
     - theme: brand

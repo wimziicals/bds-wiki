@@ -5,7 +5,9 @@ export default defineConfig({
   title: 'BDS Wiki',
   description: 'The community reference for Minecraft: Bedrock Dedicated Server',
   lastUpdated: true,
+  head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/bds-wiki/logo.svg' }]],
   themeConfig: {
+    logo: '/logo.svg',
     search: { provider: 'local' },
     socialLinks: [{ icon: 'github', link: 'https://github.com/wimziicals/bds-wiki' }],
     editLink: { pattern: 'https://github.com/wimziicals/bds-wiki/edit/main/docs/:path', text: 'Suggest a change to this page' },

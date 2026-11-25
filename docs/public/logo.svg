@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>BDS Wiki</title>
+  <g stroke="#134a37" stroke-width="1.5" stroke-linejoin="round">
+    <path d="M32 6 56 19 32 32 8 19Z" fill="#6fcfa9"/>
+    <path d="M8 19 32 32V58L8 45Z" fill="#2a8466"/>
+    <path d="M32 32 56 19V45L32 58Z" fill="#1f6f54"/>
+  </g>
+  <g stroke="#d9f5ea" stroke-width="2.6" stroke-linecap="round" fill="none">
+    <path d="M12.5 28.5 27.5 36.6"/>
+    <path d="M12.5 35.5 27.5 43.6"/>
+  </g>
+  <circle cx="38.5" cy="37.5" r="2.3" fill="#6fcfa9"/>
+  <circle cx="45.5" cy="33.7" r="2.3" fill="#6fcfa9" opacity=".55"/>
+</svg>
