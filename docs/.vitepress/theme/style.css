@@ -1,0 +1,51 @@
+:root {
+  --vp-c-brand-1: #1f6f54;
+  --vp-c-brand-2: #2a8466;
+  --vp-c-brand-3: #1f6f54;
+  --vp-c-brand-soft: rgba(42, 132, 102, 0.14);
+}
+.dark {
+  --vp-c-brand-1: #6fcfa9;
+  --vp-c-brand-2: #52b48e;
+  --vp-c-brand-3: #2a7d60;
+}
+.vp-doc td code { white-space: nowrap; }
+
+/* Use the full window width instead of VitePress's centered 1440px column. */
+:root { --vp-layout-max-width: 100vw; }
+
+@media (min-width: 960px) {
+  .VPDoc .container,
+  .VPDoc.has-aside .content-container,
+  .VPDoc:not(.has-sidebar) .container { max-width: none !important; }
+  .VPDoc .content { max-width: none !important; }
+  .VPDoc .aside { flex: none; max-width: 256px; }
+  .VPNavBar .wrapper > .container,
+  .VPHero > .container,
+  .VPFeatures > .container { max-width: none !important; }
+}
+
+@media (min-width: 1440px) {
+  .VPSidebar {
+    width: var(--vp-sidebar-width) !important;
+    padding-left: 32px !important;
+  }
+  .VPContent.has-sidebar {
+    padding-left: var(--vp-sidebar-width) !important;
+    padding-right: 0 !important;
+  }
+  .VPNavBar.has-sidebar .container > .title { width: var(--vp-sidebar-width) !important; padding-left: 32px !important; }
+  .VPNavBar.has-sidebar .content { padding-left: var(--vp-sidebar-width) !important; padding-right: 32px !important; }
+  .VPNavBar.has-sidebar .divider { padding-left: var(--vp-sidebar-width) !important; }
+}
+
+@media (min-width: 1280px) {
+  .vp-doc table { display: table !important; width: 100% !important; }
+}
+
+/* Generator page: wide layout like a doc page */
+.generator-page { max-width: 1400px; margin: 0 auto; padding: 32px 24px 64px; overflow-x: hidden; }
+.generator-page h1 { font-size: 32px; font-weight: 700; margin-bottom: 16px; }
+.generator-page > p, .generator-page > ol { line-height: 1.7; margin: 12px 0; }
+.generator-page ol { padding-left: 1.4em; list-style: decimal; }
+.generator-page a { color: var(--vp-c-brand-1); text-decoration: underline; }

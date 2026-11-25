@@ -1,0 +1,14 @@
+{
+  "name": "bds-wiki",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev docs --port 5173",
+    "build": "npm run check && vitepress build docs",
+    "preview": "vitepress preview docs",
+    "check": "node tools/check.mjs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.4"
+  }
+}
